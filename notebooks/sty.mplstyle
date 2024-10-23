@@ -24,7 +24,7 @@ xtick.major.pad : 9
 legend.fontsize : 35
 legend.title_fontsize : 35
 axes.titlesize : 35
-axes.labelsize : 45
+axes.labelsize : 43
 
 # Line widths
 axes.linewidth : 2.5
