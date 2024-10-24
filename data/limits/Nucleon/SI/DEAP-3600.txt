@@ -1,4 +1,5 @@
 # DEAP3600 SI WIMP-proton cross section
+# https://arxiv.org/abs/1902.04048
 # Mass [GeV]  cross section [cm^2]
 23.124864143682743	7.99678943651876e-43
 23.81544597041684	5.6618115023942306e-43

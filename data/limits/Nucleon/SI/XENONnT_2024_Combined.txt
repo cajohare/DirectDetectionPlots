@@ -1,5 +1,5 @@
 # XENONnT combined as of 2024
-# see https://arxiv.org/pdf/2409.17868
+# see https://arxiv.org/pdf/2409.17868 and https://arxiv.org/pdf/2303.14729.pdf
 # mass [GeV] sigma_SI [cm^2]
 2.982898036472816	9.634891972373643e-42
 3.0160720073696243	8.166191000387296e-42

@@ -1,3 +1,6 @@
+# GAMBIT CMSSM Scan, specifically neutralinos from the scenario in which the relic density is not exceeded due to stop coannihilations
+# https://arxiv.org/abs/1705.07935
+# mass [GeV] 	sigma_SI [cm^2]
 7.776476460209863717e+02 2.635832672968130420e-52
 7.749698207818739775e+02 2.145988982863154737e-52
 7.669363450645372495e+02 2.427143588267407220e-52
