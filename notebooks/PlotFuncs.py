@@ -73,6 +73,22 @@ def cbar(mappable,extend='neither',minorticklength=8,majorticklength=10,\
     return cbar
 
 
+def CreateEnvelope(fpath,file_list,new_file_name,m_min,m_max,nm=1000,header='DM Mass    cross section'):
+    mvals = logspace(log10(m_min),log10(m_max),nm)
+    g = zeros(shape=nm)
+    for file in file_list:
+        dat = loadtxt(fpath+file+".txt")
+        g1 = 10**interp(log10(mvals),log10(dat[:,0]),log10(dat[:,1]))
+        g1[mvals<amin(dat[:,0])] = inf
+        g1[mvals>amax(dat[:,0])] = inf
+        g = column_stack((g,g1))
+    g = g[:,1:]
+    g = amin(g,1)
+    g[g==inf] = 1
+    savetxt(fpath+new_file_name+'.txt',column_stack((mvals,g)),header=header)
+    return
+
+
 def col_alpha(col,alpha=0.1):
     rgb = colors.colorConverter.to_rgb(col)
     bg_rgb = [1,1,1]
