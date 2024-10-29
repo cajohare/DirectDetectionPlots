@@ -6,16 +6,16 @@ xtick.major.size : 15
 xtick.major.width : 2
 xtick.minor.size : 10
 xtick.minor.width : 1
-xtick.direction : in
-xtick.top : True
+xtick.direction : out
+xtick.top : False
 
 # Set y axis
 ytick.major.size : 15
 ytick.major.width : 2
 ytick.minor.size : 10
 ytick.minor.width : 1
-ytick.direction : in
-ytick.right : True
+ytick.direction : out
+ytick.right : False
 
 # Fontsizes
 xtick.labelsize : 30

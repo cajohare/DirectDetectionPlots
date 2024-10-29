@@ -11,6 +11,7 @@ This repository is still under construction! Please email me if you spot errors 
 ### [Download (.pdf)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/Nucleon_SI.pdf)
 ### [Download (.png)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Nucleon_SI.png)
 ### &nbsp;
+### &nbsp;
 ---
 [<img align="right" height="250" src="plots/plots_png/Nucleon_SDp.png">](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Nucleon_SDp.png)
 ### DM-nucleon scattering (spin-dependent proton)
@@ -18,12 +19,14 @@ This repository is still under construction! Please email me if you spot errors 
 ### [Download (.pdf)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/Nucleon_SDp.pdf)
 ### [Download (.png)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Nucleon_SDp.png)
 ### &nbsp;
+### &nbsp;
 ---
 [<img align="right" height="250" src="plots/plots_png/Nucleon_SDn.png">](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Nucleon_SDn.png)
 ### DM-nucleon scattering (spin-dependent neutron)
 ### [View Notebook (.ipynb)](https://github.com/cajohare/DirectDetectionPlots/blob/main/notebooks/DM-Nucleon.ipynb)
 ### [Download (.pdf)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/Nucleon_SDn.pdf)
 ### [Download (.png)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Nucleon_SDn.png)
+### &nbsp;
 ### &nbsp;
 ---
 [<img align="right" height="250" src="plots/plots_png/Electron_HeavyMediator.png">](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Electron_LightMediator.png)
@@ -39,6 +42,23 @@ This repository is still under construction! Please email me if you spot errors 
 ### [Download (.pdf)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/Electron_HeavyMediator.pdf)
 ### [Download (.png)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Electron_HeavyMediator.png)
 ### &nbsp;
+### &nbsp;
+---
+[<img align="right" height="250" src="plots/plots_png/DarkPhoton.png">](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/DarkPhoton.png)
+### Dark photon
+### [View Notebook (.ipynb)](https://github.com/cajohare/DirectDetectionPlots/blob/main/notebooks/DM-Absorption.ipynb)
+### [Download (.pdf)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/DarkPhoton.pdf)
+### [Download (.png)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/DarkPhoton.png)
+### &nbsp;
+### &nbsp;
+---
+[<img align="right" height="250" src="plots/plots_png/AxionElectron.png">](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/AxionElectron.png)
+### Axion-electron coupling
+### [View Notebook (.ipynb)](https://github.com/cajohare/DirectDetectionPlots/blob/main/notebooks/DM-Absorption.ipynb)
+### [Download (.pdf)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/AxionElectron.pdf)
+### [Download (.png)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/AxionElectron.png)
+### &nbsp;
+### &nbsp;
 ---
 
 # Download combined best limits
@@ -50,3 +70,5 @@ Datafiles for the envelopes of just the best limits across the mass range.
 ## Electron
 * [Light-mediator (.txt)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/data/limits/Electron/LightMediator/AllLimits-2024.txt)
 * [Heavy-mediator (.txt)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/data/limits/Electron/HeavyMediator/AllLimits-2024.txt)
+* [Dark photon (.txt)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/data/limits/Electron/DarkPhoton/AllLimits-2024.txt)
+* [Axion-electron (.txt)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/data/limits/Electron/Axion/AllLimits-2024.txt)

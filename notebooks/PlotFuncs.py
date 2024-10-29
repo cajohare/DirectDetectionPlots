@@ -23,6 +23,7 @@ def MySaveFig(fig,pltname,pngsave=True):
         fig.savefig(pltdir_png+pltname+'.png',bbox_inches='tight',transparent=False)
 
 
+
 def PlotBound(ax,filename,edgecolor='k',facecolor='crimson',facealpha=1,lw=3,y2=1e10,zorder=0.1,hatch=None,
               linestyle='-',skip=1,edgealpha=1,rescale_m=False,textcolor='k',
               scale_x=1,scale_y=1,start_x=0,end_x=nan,MinorEdgeScale=1.5,AddMinorEdges=False,path_effects=[pe.Stroke(linewidth=5, foreground='k'), pe.Normal()],
@@ -47,8 +48,8 @@ def PlotBound(ax,filename,edgecolor='k',facecolor='crimson',facealpha=1,lw=3,y2=
     if skip>1:
         ax.plot([dat[-2,0],dat[-1,0]],[dat[-2,1],dat[-1,1]],color=edgecolor,zorder=zorder,lw=lw,linestyle=linestyle,alpha=edgealpha)
     if AddMinorEdges:
-        ax.plot([dat[-1,0],dat[-1,0]],[dat[-1,1],MinorEdgeScale*dat[-1,1]],color=edgecolor,zorder=zorder,lw=lw,linestyle=linestyle,alpha=edgealpha)
-        ax.plot([dat[0,0],dat[0,0]],[dat[0,1],MinorEdgeScale*dat[0,1]],color=edgecolor,zorder=zorder,lw=lw,linestyle=linestyle,alpha=edgealpha)
+        ax.plot([dat[-1,0],dat[-1,0]],[dat[-1,1],MinorEdgeScale*dat[-1,1]],color=edgecolor,zorder=zorder,lw=lw,linestyle=linestyle,alpha=edgealpha,path_effects=path_effects)
+        ax.plot([dat[0,0],dat[0,0]],[dat[0,1],MinorEdgeScale*dat[0,1]],color=edgecolor,zorder=zorder,lw=lw,linestyle=linestyle,alpha=edgealpha,path_effects=path_effects)
 
     if label:
         plt.text(label_pos[0],label_pos[1],label,fontsize=fontsize,
@@ -58,6 +59,11 @@ def PlotBound(ax,filename,edgecolor='k',facecolor='crimson',facealpha=1,lw=3,y2=
 def line_background(lw,col):
     return [pe.Stroke(linewidth=lw, foreground=col), pe.Normal()]
 
+    
+def SimpleAnnotation(ax,x1,x2,y1,y2,color='red',lw=3,path_effects=line_background(4,'k'),marker='o',markersize=7,mec='k',mew=1):
+    ax.plot([x1,x2],[y1,y2],color=color,lw=lw,path_effects=path_effects)
+    ax.plot(x2,y2,marker,markersize=markersize,mec='k',mew=mew,mfc=color)
+    return
 
 def cbar(mappable,extend='neither',minorticklength=8,majorticklength=10,\
             minortickwidth=2,majortickwidth=2.5,pad=0.2,side="right",orientation="vertical"):
