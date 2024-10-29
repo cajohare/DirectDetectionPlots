@@ -8,23 +8,23 @@ This repository is still under construction! Please email me if you spot errors 
 [<img align="right" height="250" src="plots/plots_png/Nucleon_SI.png">](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Nucleon_SI.png)
 ### DM-nucleon scattering (spin-independent)
 ### [View Notebook (.ipynb)](https://github.com/cajohare/DirectDetectionPlots/blob/main/notebooks/DM-Nucleon.ipynb)
-### [Download (.pdf)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/Nucleon_SI.pdf)
-### [Download (.png)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Nucleon_SI.png)
+### [Download plot (.pdf)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/Nucleon_SI.pdf)
+### [Download plot (.png)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Nucleon_SI.png)
 ### &nbsp;
 ### &nbsp;
 ---
 [<img align="right" height="250" src="plots/plots_png/Nucleon_SDp.png">](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Nucleon_SDp.png)
 ### DM-nucleon scattering (spin-dependent proton)
 ### [View Notebook (.ipynb)](https://github.com/cajohare/DirectDetectionPlots/blob/main/notebooks/DM-Nucleon.ipynb)
-### [Download (.pdf)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/Nucleon_SDp.pdf)
-### [Download (.png)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Nucleon_SDp.png)
+### [Download plot (.pdf)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/Nucleon_SDp.pdf)
+### [Download plot (.png)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Nucleon_SDp.png)
 ### &nbsp;
 ### &nbsp;
 ---
 [<img align="right" height="250" src="plots/plots_png/Nucleon_SDn.png">](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Nucleon_SDn.png)
 ### DM-nucleon scattering (spin-dependent neutron)
 ### [View Notebook (.ipynb)](https://github.com/cajohare/DirectDetectionPlots/blob/main/notebooks/DM-Nucleon.ipynb)
-### [Download (.pdf)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/Nucleon_SDn.pdf)
+### [Download plot (.pdf)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/Nucleon_SDn.pdf)
 ### [Download (.png)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Nucleon_SDn.png)
 ### &nbsp;
 ### &nbsp;
@@ -32,31 +32,32 @@ This repository is still under construction! Please email me if you spot errors 
 [<img align="right" height="250" src="plots/plots_png/Electron_HeavyMediator.png">](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Electron_LightMediator.png)
 ### DM-electron scattering (heavy mediator)
 ### [View Notebook (.ipynb)](https://github.com/cajohare/DirectDetectionPlots/blob/main/notebooks/DM-Electron.ipynb)
-### [Download (.pdf)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/Electron_LightMediator.pdf)
-### [Download (.png)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Electron_LightMediator.png)
+### [Download plot (.pdf)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/Electron_LightMediator.pdf)
+### [Download plot (.png)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Electron_LightMediator.png)
+### &nbsp;
 ### &nbsp;
 ---
 [<img align="right" height="250" src="plots/plots_png/Electron_LightMediator.png">](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Electron_HeavyMediator.png)
 ### DM-electron scattering (light mediator)
 ### [View Notebook (.ipynb)](https://github.com/cajohare/DirectDetectionPlots/blob/main/notebooks/DM-Electron.ipynb)
-### [Download (.pdf)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/Electron_HeavyMediator.pdf)
-### [Download (.png)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Electron_HeavyMediator.png)
+### [Download plot (.pdf)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/Electron_HeavyMediator.pdf)
+### [Download plot (.png)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Electron_HeavyMediator.png)
 ### &nbsp;
 ### &nbsp;
 ---
 [<img align="right" height="250" src="plots/plots_png/DarkPhoton.png">](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/DarkPhoton.png)
 ### Dark photon
 ### [View Notebook (.ipynb)](https://github.com/cajohare/DirectDetectionPlots/blob/main/notebooks/DM-Absorption.ipynb)
-### [Download (.pdf)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/DarkPhoton.pdf)
-### [Download (.png)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/DarkPhoton.png)
+### [Download plot (.pdf)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/DarkPhoton.pdf)
+### [Download plot (.png)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/DarkPhoton.png)
 ### &nbsp;
 ### &nbsp;
 ---
 [<img align="right" height="250" src="plots/plots_png/AxionElectron.png">](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/AxionElectron.png)
 ### Axion-electron coupling
 ### [View Notebook (.ipynb)](https://github.com/cajohare/DirectDetectionPlots/blob/main/notebooks/DM-Absorption.ipynb)
-### [Download (.pdf)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/AxionElectron.pdf)
-### [Download (.png)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/AxionElectron.png)
+### [Download plot (.pdf)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/AxionElectron.pdf)
+### [Download plot (.png)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/AxionElectron.png)
 ### &nbsp;
 ### &nbsp;
 ---
