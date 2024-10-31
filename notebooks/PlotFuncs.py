@@ -13,9 +13,9 @@ import matplotlib.cm as cm
 from scipy.stats import norm
 import matplotlib.patheffects as pe
 
+# Save PDF and PNG versions of figure at the same time
 pltdir = '../plots/'
 pltdir_png = pltdir+'/plots_png/'
-
 def MySaveFig(fig,pltname,pngsave=True):
     fig.savefig(pltdir+pltname+'.pdf',bbox_inches='tight')
     if pngsave:
@@ -23,12 +23,44 @@ def MySaveFig(fig,pltname,pngsave=True):
         fig.savefig(pltdir_png+pltname+'.png',bbox_inches='tight',transparent=False)
 
 
+# Main function for plotting and labelling a bound
+def PlotBound(ax,filename,
+            edgecolor='k',facecolor='crimson',facealpha=1,edgealpha=1,lw=3,zorder=0.1,hatch=None,linestyle='-',path_effects=[pe.Stroke(linewidth=5, foreground='k'), pe.Normal()],
+            y2=1e10,skip=1,rescale_m=False,scale_x=1,scale_y=1,start_x=0,end_x=nan,MinorEdgeScale=1.5,AddMinorEdges=False,
+            label=None,label_pos=[0,0],textcolor='k',text_path_effects=[pe.Stroke(linewidth=1, foreground='k'), pe.Normal()],textalpha=1,rotation=0,fontsize=25):
+   
+    # ax = axis object to add the bound to
+    # filename = name of file including path containing the data to plot, assumed that xaxis = first column and yaxis = second column
 
-def PlotBound(ax,filename,edgecolor='k',facecolor='crimson',facealpha=1,lw=3,y2=1e10,zorder=0.1,hatch=None,
-              linestyle='-',skip=1,edgealpha=1,rescale_m=False,textcolor='k',
-              scale_x=1,scale_y=1,start_x=0,end_x=nan,MinorEdgeScale=1.5,AddMinorEdges=False,path_effects=[pe.Stroke(linewidth=5, foreground='k'), pe.Normal()],
-              label =None,label_pos=[0,0],text_on=False,
-              text_path_effects=[pe.Stroke(linewidth=1, foreground='k'), pe.Normal()],textalpha=1,rotation=0,fontsize=25):
+    # Bound appearance options:
+    # edgecolor = color of the edge of the bound
+    # facecolor = color to fill in the area of the bound
+    # facealpha = transparency of the fill
+    # edgealpha = transparency of the edge
+    # lw = linewidth
+    # zorder = zorder of all plot objects added
+    # hatch = e.g. '/' for filling the bound with a hatch effect
+    # linestyle = e.g. '--', ':' etc.
+    # path_effects = path effects for the bound edge
+
+    # Customise how bound is plotted:
+    # y2 = y2 parameter is used by plt.fill_between(), if you want to plt.fill() instead then use y2=nan
+    # rescale_m = switch to True if second column (i.e. coupling or cross section) needs to be rescaled by 1/m
+    # skip = how many entries of data file to skip, e.g. skip=2 will plot every other data point. This is useful if the bound is very spiky
+    # start_x = row of datafile to start plotting
+    # end_x = row of datafile to stop plotting
+    # scale_x = rescale first column of datafile by some amount
+    # scale_y = rescale second column of datafile by some amount
+    # AddMinorEdges = switch to True if you don't want the bound shooting up to the top of the plot when the coupling or cross section = infinity
+
+    # Label options:
+    # label = best to use a raw string to render latex correctly, e.g. r'$\pi$'
+    # fontsize 
+    # rotation = rotation of textlabel on the plot
+    # label_pos = [x,y] position on the plot where label should be
+    # textalpha = transparency of text label
+    # text_path_effects = path_effects for text label
+   
     dat = loadtxt(filename)
     if end_x/end_x==1:
         dat = dat[start_x:end_x,:]
@@ -57,16 +89,21 @@ def PlotBound(ax,filename,edgecolor='k',facecolor='crimson',facealpha=1,lw=3,y2=
     return
 
 def line_background(lw,col):
+    # How to use: 
+    # Do plt.plot(x,y,'r-',lw=2,path_effects=line_background(4,'k)) to plot a red line with a black outline
     return [pe.Stroke(linewidth=lw, foreground=col), pe.Normal()]
 
     
 def SimpleAnnotation(ax,x1,x2,y1,y2,color='red',lw=3,path_effects=line_background(4,'k'),marker='o',markersize=7,mec='k',mew=1):
+    # Plots a simple line between [x1,y1] and [x2,y2] with a small marker at [x2,y2]
     ax.plot([x1,x2],[y1,y2],color=color,lw=lw,path_effects=path_effects)
     ax.plot(x2,y2,marker,markersize=markersize,mec='k',mew=mew,mfc=color)
     return
 
+
 def cbar(mappable,extend='neither',minorticklength=8,majorticklength=10,\
             minortickwidth=2,majortickwidth=2.5,pad=0.2,side="right",orientation="vertical"):
+    # Custom colobrar that does not do matplotlib's annoying thing where colorbars change the size of a figure
     ax = mappable.axes
     fig = ax.figure
     divider = make_axes_locatable(ax)
@@ -75,11 +112,11 @@ def cbar(mappable,extend='neither',minorticklength=8,majorticklength=10,\
     cbar.ax.tick_params(which='minor',length=minorticklength,width=minortickwidth)
     cbar.ax.tick_params(which='major',length=majorticklength,width=majortickwidth)
     cbar.solids.set_edgecolor("face")
-
     return cbar
 
 
 def CreateEnvelope(fpath,file_list,new_file_name,m_min,m_max,nm=1000,header='DM Mass    cross section'):
+    # Use this to create an envelope of many data files, e.g. for combining the best limits over some mass range between m_min and m_max
     mvals = logspace(log10(m_min),log10(m_max),nm)
     g = zeros(shape=nm)
     for file in file_list:
@@ -96,6 +133,7 @@ def CreateEnvelope(fpath,file_list,new_file_name,m_min,m_max,nm=1000,header='DM 
 
 
 def col_alpha(col,alpha=0.1):
+    # col_alpha('red',0.5) will create a new colour that looks like the colour 'red' with an alpha of 0.5 but without actually being transparent
     rgb = colors.colorConverter.to_rgb(col)
     bg_rgb = [1,1,1]
     return [alpha * c1 + (1 - alpha) * c2
@@ -103,9 +141,9 @@ def col_alpha(col,alpha=0.1):
 
 
 def reverse_colourmap(cmap, name = 'my_cmap_r'):
+    # Creates a reverse colourmap out of cmap
     reverse = []
     k = []
-
     for key in cmap._segmentdata:
         k.append(key)
         channel = cmap._segmentdata[key]
@@ -114,7 +152,6 @@ def reverse_colourmap(cmap, name = 'my_cmap_r'):
         for t in channel:
             data.append((1-t[0],t[2],t[1]))
         reverse.append(sorted(data))
-
     LinearL = dict(zip(k,reverse))
     my_cmap_r = mpl.colors.LinearSegmentedColormap(name, LinearL)
     return my_cmap_r
