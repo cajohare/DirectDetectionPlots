@@ -61,6 +61,22 @@ This repository is still under construction! Please email me if you spot errors 
 ### &nbsp;
 ### &nbsp;
 ---
+[<img align="right" height="250" src="plots/plots_png/Ultraheavy_Contact.png">](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Ultraheavy_Contact.png)
+### Ultraheavy dark matter
+### [View Notebook (.ipynb)](https://github.com/cajohare/DirectDetectionPlots/blob/main/notebooks/UltraheavyDM.ipynb)
+### [Download plot (.pdf)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/Ultraheavy_Contact.pdf)
+### [Download plot (.png)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Ultraheavy_Contact.png)
+### &nbsp;
+### &nbsp;
+---
+[<img align="right" height="250" src="plots/plots_png/MacroscopicDM.png">](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/MacroscopicDM.png)
+### Macroscopic dark matter
+### [View Notebook (.ipynb)](https://github.com/cajohare/DirectDetectionPlots/blob/main/notebooks/UltraheavyDM.ipynb)
+### [Download plot (.pdf)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/MacroscopicDM.pdf)
+### [Download plot (.png)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/MacroscopicDM.png)
+### &nbsp;
+### &nbsp;
+
 
 # Download combined best limits
 Datafiles for the envelopes of just the best limits across the mass range. 

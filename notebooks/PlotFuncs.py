@@ -5,6 +5,7 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 import matplotlib.gridspec as gridspec
+import matplotlib.ticker
 from matplotlib.colors import ListedColormap
 from matplotlib import colors
 import matplotlib.ticker as mticker
@@ -129,6 +130,28 @@ def CreateEnvelope(fpath,file_list,new_file_name,m_min,m_max,nm=1000,header='DM 
     g = amin(g,1)
     g[g==inf] = 1
     savetxt(fpath+new_file_name+'.txt',column_stack((mvals,g)),header=header)
+    return
+
+
+def UpperAxis_grams(ax,tickdir='out',xtick_rotation=0,labelsize=25,xlabel=None,lfs=40,tick_pad=8,tfs=25,xlabel_pad=10):
+    m_min,m_max = ax.get_xlim()
+    GeV_2_g = 1/5.62e23 # convert GeV to grams
+    ax2 = ax.twiny()
+    ax2.set_xscale('log')
+    ax2.set_xlabel(xlabel,fontsize=lfs,labelpad=xlabel_pad)
+    ax2.tick_params(labelsize=tfs)
+    ax2.tick_params(which='major',direction=tickdir,width=2.5,length=13,pad=tick_pad)
+    ax2.tick_params(which='minor',direction=tickdir,width=1,length=10)
+
+    #ax2.xaxis.set_major_locator(matplotlib.ticker.LogLocator(base=1000,subs=(1.0,),numticks=100))
+    #ax2.xaxis.set_minor_locator(matplotlib.ticker.LogLocator(base=10,subs=(1.0,),numticks=100))
+
+    ax2.set_xticks(10.0**arange(-18,18,3))
+    ax2.set_xticklabels(['ag','fg','pg','ng',r'\textmu g','mg','g','kg','Mg','Gg','Tg','Pg']);
+    ax2.set_xticks(10.0**arange(-18,18-2,1), minor=True)
+    ax2.xaxis.set_minor_formatter(matplotlib.ticker.NullFormatter())
+    ax2.set_xlim([m_min*GeV_2_g,m_max*GeV_2_g])
+    plt.sca(ax)
     return
 
 
