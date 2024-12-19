@@ -29,19 +29,19 @@ This repository is still under construction! Please email me if you spot errors 
 ### &nbsp;
 ### &nbsp;
 ---
-[<img align="right" height="250" src="plots/plots_png/Electron_HeavyMediator.png">](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Electron_LightMediator.png)
+[<img align="right" height="250" src="plots/plots_png/Electron_HeavyMediator.png">](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Electron_HeavyMediator.png)
 ### DM-electron scattering (heavy mediator)
-### [View Notebook (.ipynb)](https://github.com/cajohare/DirectDetectionPlots/blob/main/notebooks/DM-Electron.ipynb)
-### [Download plot (.pdf)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/Electron_LightMediator.pdf)
-### [Download plot (.png)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Electron_LightMediator.png)
-### &nbsp;
-### &nbsp;
----
-[<img align="right" height="250" src="plots/plots_png/Electron_LightMediator.png">](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Electron_HeavyMediator.png)
-### DM-electron scattering (light mediator)
 ### [View Notebook (.ipynb)](https://github.com/cajohare/DirectDetectionPlots/blob/main/notebooks/DM-Electron.ipynb)
 ### [Download plot (.pdf)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/Electron_HeavyMediator.pdf)
 ### [Download plot (.png)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Electron_HeavyMediator.png)
+### &nbsp;
+### &nbsp;
+---
+[<img align="right" height="250" src="plots/plots_png/Electron_LightMediator.png">](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Electron_LightMediator.png)
+### DM-electron scattering (light mediator)
+### [View Notebook (.ipynb)](https://github.com/cajohare/DirectDetectionPlots/blob/main/notebooks/DM-Electron.ipynb)
+### [Download plot (.pdf)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/Electron_LightMediator.pdf)
+### [Download plot (.png)](https://raw.githubusercontent.com/cajohare/DirectDetectionPlots/refs/heads/main/plots/plots_png/Electron_LightMediator.png)
 ### &nbsp;
 ### &nbsp;
 ---
