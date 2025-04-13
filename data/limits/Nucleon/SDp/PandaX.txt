@@ -1,5 +1,5 @@
 # PandaX
-# https://arxiv.org/abs/1807.01936
+# https://arxiv.org/pdf/2408.00664
 # mass [GeV]    sigma_SD_proton [cm^2]
 5.465462289622026	1.9724453391202418e-37
 5.7112694520101	1.4849052379747208e-37
